@@ -5,7 +5,7 @@ import ResultDetails from './ResultDeatils'
 const ResultsList = ({title,results}) => {
     //console.log(results.length)
     return(
-    <View>
+    <View style={styles.container}>
        
        <Text style={styles.titleStyle}> {title}</Text>
        
@@ -25,8 +25,13 @@ const ResultsList = ({title,results}) => {
 const styles = StyleSheet.create({
     titleStyle: {
         fontSize:18,
-        fontWeight:'bold'
+        fontWeight:'bold',
+        marginLeft:15,
+        marginBottom:5,
 
+    },
+    container: {
+        marginBottom:10
     }
 });
 

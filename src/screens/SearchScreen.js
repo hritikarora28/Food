@@ -19,7 +19,7 @@ const SearchScreen = () => {
 	
 
 	return (
-		<View>
+		<View style={{ marginLeft:10}}>
 			<SearchBar term={term} onTermChange={setTerm} onTermSubmit={() => searchApi(term)} />
 			{errorMessage ? <Text>{errorMessage}</Text> : null}
 			<Text>We have found {results.length} results</Text>
